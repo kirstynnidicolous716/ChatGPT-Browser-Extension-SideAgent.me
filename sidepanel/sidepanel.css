@@ -1,0 +1,18 @@
+:root { --bg: #0f1117; --fg:#e5e7eb; --muted:#9aa4b2; --accent:#4f46e5; --err:#ef4444; }
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font: 13px/1.4 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; background: var(--bg); color: var(--fg); }
+header { display:flex; align-items:center; justify-content:space-between; padding:8px 10px; border-bottom:1px solid #222; position: sticky; top:0; background: #0f1117cc; backdrop-filter: blur(6px); }
+.title { font-weight: 600; }
+.actions button { margin-left: 6px; }
+button { background:#1f2430; color:var(--fg); border:1px solid #2a3140; border-radius:6px; padding:6px 10px; cursor:pointer; }
+button:hover { border-color:#3a4150; }
+main { display:flex; flex-direction:column; height: calc(100% - 42px); }
+.log { flex:1; overflow:auto; padding:10px; }
+.row { margin-bottom:10px; }
+.row .role { font-size:11px; color:var(--muted); margin-bottom:2px; }
+.row pre { white-space:pre-wrap; word-break:break-word; background:#0b0d12; border:1px solid #1b1f2a; padding:8px; border-radius:6px; }
+.prompt { display:flex; padding:8px; border-top:1px solid #222; }
+.caret { color: var(--accent); margin: 0 6px 0 4px; }
+.prompt input { flex:1; background:#0b0e14; border:1px solid #1b2130; color:var(--fg); border-radius:6px; padding:8px; }
+.prompt #send { margin-left: 8px; }
+.bad { color: var(--err); }

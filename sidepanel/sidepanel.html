@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SideAgent.me</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <header>
+    <div class="title">SideAgent.me</div>
+    <div class="actions">
+      <button id="btnArm" title="Arm dynamic code execution">Arm</button>
+      <button id="btnWatch" title="Auto-resume on URL/DOM change">Watch: Off</button>
+      <button id="btnSnapshot" title="Send page snapshot to ChatGPT">Snapshot DOM</button>
+      <button id="btnSettings">Settings</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="log" class="log"></div>
+    <div class="prompt">
+      <span class="caret">›</span>
+      <input id="cmd" placeholder="Type a command or ask ChatGPT (Enter to send)…" />
+      <button id="send">Send</button>
+    </div>
+  </main>
+
+  <script type="module" src="sidepanel.js"></script>
+</body>
+</html>
