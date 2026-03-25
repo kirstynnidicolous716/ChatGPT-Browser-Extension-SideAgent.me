@@ -1,0 +1,1 @@
+# ChatGPT-Browser-Extension-SideAgent.me
